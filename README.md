@@ -1,47 +1,65 @@
-# Fyle Frontend developement challenge
+<h1>Project live Demo</h1>
 
-# Challenge outline - Health Challenge Tracker
+<div><a href ="https://health-tracker-1702.web.app"><b>😎Click Here</b></a></div>
 
-## Design an Angular 14+ single-page application (SPA) that takes inputs
 
-- User name
-- Workout Type
-- Workout minutes
-  ![image](https://github.com/user-attachments/assets/9e3795e3-61a9-41f1-b4a9-865e8a0de012)
+# Health Challenge Tracker 🏋️‍♂️📊
 
-## Display the user workout list with the below functionalities
+Welcome to the Health Challenge Tracker project! This Angular application helps track workout challenges and user progress.
 
-- Search by name
-- Filter by workout type
-- Pagination
-  ![image](https://github.com/user-attachments/assets/3b227ec5-5100-4363-8f2d-57abd7d00dc4)
+## Project Overview
 
-Optional feature → Display the workout progress using charts.
-![image](https://github.com/user-attachments/assets/fc42a6dc-b3c4-404d-b14a-9e3f5a0304a9)
-![image](https://github.com/user-attachments/assets/6e71a8f0-2f04-4135-bc0a-254566417c89)
+This project includes components for managing workouts, searching, filtering, and paginating workout entries. It also includes chart visualizations and unit tests for comprehensive coverage.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Table of Contents
 
-## Development server
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **AddWorkoutComponent**: Form to add new workout entries.
+- **WorkoutListComponent**: Displays workouts in a table grid with search, filter, and pagination.
+- **SearchFilterComponent**: Provides search and filter functionality.
+- **PaginationComponent**: Handles pagination logic.
+- **Charts**: Visualize workout progress.
+- **Unit Tests**: Comprehensive tests for components and services.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+To get started with this project, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone the repository:**
 
-## Running unit tests
+    ```bash
+    git clone https://github.com/your-username/health-challenge-tracker.git
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Navigate to the project directory:**
 
-## Running end-to-end tests
+    ```bash
+    cd health-challenge-tracker
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Install dependencies:**
 
-## Further help
+    Make sure you have Node.js and npm installed. Then, run:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+    ```bash
+    npm install
+    ```
+
+4. **Set up Tailwind CSS:**
+
+    The project uses Tailwind CSS for styling. Ensure Tailwind CSS is correctly set up in your `angular.json` and other configuration files.
+
+## Usage
+
+To run the project locally, use the following command:
+
+```bash
+ng serve
