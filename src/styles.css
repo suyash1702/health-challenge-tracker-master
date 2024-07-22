@@ -1,0 +1,110 @@
+@import "@angular/material/prebuilt-themes/magenta-violet.css";
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration-color: black;
+}
+
+body {
+  background-color: #8a2be2; /* Violet */
+  color: rgba(255, 255, 255, 0.85); /* Slightly less faint text color */
+}
+
+body:hover {
+  background-color: #9a4fed; /* Slightly lighter violet on hover */
+  color: rgba(255, 255, 255, 1); /* Full white text color on hover */
+}
+
+a,
+button {
+  transition: color 0.3s, background-color 0.3s;
+  color: inherit; /* Ensure links and buttons inherit the text color */
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove default button borders */
+  cursor: pointer; /* Pointer cursor on hover */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover,
+button:hover {
+  color: rgba(255, 255, 255, 1); /* Full white text color on hover */
+  background-color: #9a4fed; /* Slightly lighter violet on hover */
+}
+
+/* Dark mode support */
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #1E1E1E; /* Dark background color */
+/* --font-color: #FFFFFF; Light font color */
+/* } */
+
+/* body {
+        background-color: var(--background-color);
+        color: var(--font-color);
+    } */
+/* } */
+
+/* Responsive font size */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Additional styling for professional appearance */
+header,
+footer {
+  background-color: #6a1b9a; /* Darker violet for header and footer */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Card styling */
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly transparent background */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slightly more transparent on hover */
+}
