@@ -1,6 +1,8 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Chart, registerables } from 'chart.js';
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from '../../firebaseConfig';
 
 Chart.register(...registerables);
 
@@ -246,7 +248,10 @@ interface WorkoutEntry {
     `,
   ],
 })
+
+
 export class AppComponent implements OnInit {
+
   userName: string = '';
   workoutType: string = '';
   workoutMinutes: number = 0;
@@ -278,6 +283,7 @@ export class AppComponent implements OnInit {
   constructor(private elementRef: ElementRef) {}
 
   ngOnInit() {
+    const app = initializeApp(firebaseConfig);
     this.loadFromLocalStorage();
     this.applyFilters();
   }
